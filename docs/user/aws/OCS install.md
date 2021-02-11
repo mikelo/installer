@@ -15,11 +15,12 @@ RHCOSAMI=$(aws ec2 describe-images --filters "Name=name,Values=rhcos-4*" --query
 ```
 to get the latest AMI.
 
-Now you may proceed create the install-config.yaml
-
+Now you may proceed create the install-config.yaml, back it up and then lauch the actual installation:
+```
 openshift-install create install-config --log-level debug
-
-
+cp install-config.yaml install-config.yaml.backup
+openshift-install create install-config --log-level debug
+```
 
 OCS intall:
 =========================================================================
