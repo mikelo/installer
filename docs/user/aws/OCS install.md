@@ -19,7 +19,7 @@ Now you may proceed create the install-config.yaml, back it up and then lauch th
 ```
 openshift-install create install-config --log-level debug
 cp install-config.yaml install-config.yaml.backup
-openshift-install create install-config --log-level debug
+openshift-install create cluster --log-level debug
 ```
 
 OCS intall:
